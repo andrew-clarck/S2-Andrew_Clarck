@@ -22,8 +22,27 @@ while True:
             return subtracao
         
 
+        def divisao(v1,v2,operador):
+            divisao = v1 - v2
+            return divisao
+
+
+        def multiplicacao(v1,v2,operador):
+            multiplicacao = v1 / v2
+            return soma
+
+
         if operador == "+":
             print(f"{v1} + {v2} = ", soma(v1,v2,operador))
             
         elif operador == "-":
             print(f"{v1} - {v2} = ", subtracao(v1,v2,operador))
+
+        elif operador == "/":
+            print(f"{v1} + {v2} = ", multiplicacao(v1,v2,operador))
+
+        elif operador == "*":
+            print(f"{v1} + {v2} = ", divisao(v1,v2,operador))
+
+        else:
+            print("Você digitou um operador inválido, tente novamente.")
